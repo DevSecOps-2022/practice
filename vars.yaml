@@ -2,11 +2,11 @@
   hosts: local
   connection: local
   vars:
+    COURSE: devops
+    TRAINER: siva
+    DURATION: "5 months"
   vars_file:
-   - course.yaml
-  COURSE: devops
-  TRAINER: siva
-  DURATION: "5 months"
+  - course.yaml
   tasks: 
    - name: print vars
      vars:
