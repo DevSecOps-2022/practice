@@ -16,6 +16,6 @@
   - name: print  course information 
     debug:
       msg: |
-       name: {{course}}
+       name: {{course}} | debug_type
        duration: {{duration_in_hrs}}
        is_it_live: {{is_live_session}}
