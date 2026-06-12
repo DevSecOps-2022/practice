@@ -24,4 +24,6 @@
       - "type:{{is_live_session | type_debug}}"
       - "name: {{topics}}"
       - "type:{{topics | type_debug}}"
+      - "name: {{more_details}}"
+      - "type:{{more_details | type_debug}}"
  
