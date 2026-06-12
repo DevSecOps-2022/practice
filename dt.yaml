@@ -18,5 +18,8 @@
       msg: 
       - "name: {{course}}"
       - "type: {{ course | type_debug }}"
+      - "name: {{duration_in_hrs}}"
+      - "type:{{duration_in_hrs | type_debug}}"
+
       #  duration: {{duration_in_hrs}}
       #  is_it_live: {{is_live_session}}
