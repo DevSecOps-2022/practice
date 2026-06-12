@@ -1,0 +1,18 @@
+- name: couser info
+  hosts: local
+  connection: local
+  vars:
+   course: "devops"
+   duration_in_hrs: 150 
+   is_live-session: true
+   topics:
+   - linux
+   - terraform
+   - docker
+   more_details:
+     months: "5"
+     trainer: "siva"
+  tasks:
+  - name: print  course information 
+    debug:
+      msg:
