@@ -9,9 +9,9 @@
   # - course.yaml
   vars_prompt:
   - name:
-    prompt: please enter {{COURSE}}
+    prompt: please enter course
   - name:
-    prompt: please enter {{TRAINER}}
+    prompt: please enter trainer
 
   tasks: 
   - name: print vars
