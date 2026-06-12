@@ -5,6 +5,6 @@
    COURSE: devops
    TRAINER: siva
    DURATION: "5 months"
-  task: 
+  tasks: 
   - debug:
      msg: "learning{{COURSE}}, trainer is  {{TRAINER}} and the time duration is {{DURATION}}"
