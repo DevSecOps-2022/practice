@@ -1,16 +1,17 @@
 - name: checking vars presedence
   hosts: local
   connection: local
-  # vars:
-  #   COURSE: devops
-  #   TRAINER: siva
+  vars:
+    COURSE: devops
+    TRAINER: siva
   #   DURATION: "5 months"
   # vars_files:
   # - course.yaml
   vars_prompt:
   - name:
-    COURSE: AIOP
     prompt: please enter {{COURSE}}
+  - name:
+    prompt: please enter {{TRAINER}}
 
   tasks: 
   - name: print vars
