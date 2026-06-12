@@ -22,6 +22,6 @@
       - "type:{{duration_in_hrs | type_debug}}"
       - "name: {{is_live_session}}"
       - "type:{{is_live_session | type_debug}}"
-      - "name: {{topic}}"
+      - "name: {{topics}}"
       - "type:{{topics | type_debug}}"
  
