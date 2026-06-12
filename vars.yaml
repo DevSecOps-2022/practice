@@ -5,8 +5,8 @@
     COURSE: devops
     TRAINER: siva
     DURATION: "5 months"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   tasks: 
   - name: print vars
     # vars:
