@@ -8,10 +8,10 @@
   # vars_files:
   # - course.yaml
   vars_prompt:
-  - name:
+  - name: COURSE
     prompt: please enter course
     private: false
-  - name:
+  - name: TRAINER
     prompt: please enter trainer
     private: false
 
