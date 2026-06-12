@@ -1,10 +1,17 @@
 - name: checking vars presedence
   hosts: local
   connection: local
-  vars:
-   COURSE: devops
-   TRAINER: siva
-   DURATION: "5 months"
+ ; vars:
+ ; vars_file:
+ ;  - course.yaml
+ ; COURSE: devops
+ ; TRAINER: siva
+ ; DURATION: "5 months"
   tasks: 
-  - debug:
-     msg: "learning{{COURSE}}, trainer is  {{TRAINER}} and the time duration is {{DURATION}}"
+   - name: print vars
+     vars:
+       COURSE: kubernets
+       TRAINER: mahadev
+       DURATION: "2 months"
+   - debug:
+      msg: "learning{{COURSE}}, trainer is  {{TRAINER}} and the time duration is {{DURATION}}"
