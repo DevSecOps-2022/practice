@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  age: 20
+   age: 20
   tasks:
    - name:  is dudu age is mre than 20
      debug:
