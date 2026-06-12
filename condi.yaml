@@ -1,0 +1,10 @@
+- name: checkin condtions
+  hosts: local
+  connection: local
+  vars:
+  age: 20
+  tasks:
+   - name:  is dudu age is mre than 20
+     debug:
+      msg: "yes ! dudu age is 30"
+  when: age > 30
