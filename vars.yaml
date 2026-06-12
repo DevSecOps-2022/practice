@@ -1,12 +1,12 @@
 - name: checking vars presedence
   hosts: local
   connection: local
- ; vars:
- ; vars_file:
- ;  - course.yaml
- ; COURSE: devops
- ; TRAINER: siva
- ; DURATION: "5 months"
+  vars:
+  vars_file:
+   - course.yaml
+  COURSE: devops
+  TRAINER: siva
+  DURATION: "5 months"
   tasks: 
    - name: print vars
      vars:
