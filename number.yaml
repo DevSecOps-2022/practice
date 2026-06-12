@@ -9,7 +9,7 @@
      msg: "given numver{{given_number}} is even"
     name: is even
 
-    name: is odd
+  - name: is odd
     debug:
      msg: "given number {{given_number}} is odd"
   - when: given_number % 2 != 0
