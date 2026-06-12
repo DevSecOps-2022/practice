@@ -9,9 +9,9 @@
   - course.yaml
   tasks: 
   - name: print vars
-    vars:
-      COURSE: kubernets
-      TRAINER: mahadev
-      DURATION: "2 months"
+    # vars:
+    #   COURSE: kubernets
+    #   TRAINER: mahadev
+    #   DURATION: "2 months"
     debug:
       msg: "learning{{COURSE}}, trainer is  {{TRAINER}} and the time duration is {{DURATION}}"
