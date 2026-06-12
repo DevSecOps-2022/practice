@@ -7,6 +7,11 @@
   #   DURATION: "5 months"
   # vars_files:
   # - course.yaml
+  vars_prompt:
+  - name:
+    COURSE: AIOP
+    prompt: please enter {{COURSE}}
+
   tasks: 
   - name: print vars
     # vars:
