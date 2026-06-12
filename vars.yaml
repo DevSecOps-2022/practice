@@ -1,4 +1,4 @@
-- name: checking vars  presedence
+- name: checking vars presedence
   hosts: local
   connection: local
   vars:
