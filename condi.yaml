@@ -7,4 +7,4 @@
    - name:  is dudu age is mre than 20
      debug:
       msg: "yes ! dudu age is 30"
-     when: age > 30
+     when: age < 30
