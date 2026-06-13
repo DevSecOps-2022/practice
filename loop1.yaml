@@ -14,7 +14,7 @@
     register: packages
   - name: printing installed softwares
     debug:
-      msg: "packages"
+      msg: "{{packages}}"
   #   loop:
   #     - nginx
   #     - mysql
