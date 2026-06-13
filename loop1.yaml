@@ -1,6 +1,7 @@
 - name: installing softwares
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: installing softwares
     package:
@@ -11,9 +12,9 @@
         - git
         - maven
     register: packages
-  # - name: printing installed softwares
-  #   debug:
-  #     msg: "insatlling {{item}}"
+  - name: printing installed softwares
+    debug:
+      msg: "packages"
   #   loop:
   #     - nginx
   #     - mysql
