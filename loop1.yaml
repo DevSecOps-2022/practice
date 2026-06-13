@@ -1,0 +1,14 @@
+- name: installing softwares
+  hosts: local
+  connection: local
+  tasks:
+  package:
+  - name: {{item}}
+  loop:
+  - nginx
+  - mysql
+  - git
+  - maven
+  - name:
+    debug:
+      msg: "insatlling {{item}}"
