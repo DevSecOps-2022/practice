@@ -4,12 +4,18 @@
   tasks:
   - name: installing softwares
     package:
-      name: {{item}}
-      loop:
+      name: "{{item}}"
+    loop:
         - nginx
         - mysql
         - git
         - maven
-  - name:
-    debug:
-      msg: "insatlling {{item}}"
+    register: packages
+  # - name: printing installed softwares
+  #   debug:
+  #     msg: "insatlling {{item}}"
+  #   loop:
+  #     - nginx
+  #     - mysql
+  #     - git
+  #     - maven
