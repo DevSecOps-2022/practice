@@ -4,7 +4,7 @@
   tasks:
   - name: installing softwares
     package:
-      name: "{{item}}"
+      name: {{item}}
       loop:
         - nginx
         - mysql
