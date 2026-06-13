@@ -3,7 +3,7 @@
   connection: local
   tasks:
   package:
-  - name: {{item}}
+  - name: "{{item}}"
     loop:
     - nginx
     - mysql
