@@ -4,10 +4,10 @@
   vars:
    given_number: 8
   tasks:
-  - when: given_number % 2 == 0
+  - name: is even
     debug:
      msg: "given numver{{given_number}} is even"
-    name: is even
+    when: given_number % 2 == 0
 
   - name: is odd
     debug:
