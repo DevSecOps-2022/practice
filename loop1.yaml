@@ -2,8 +2,9 @@
   hosts: local
   connection: local
   tasks:
-  package:
-  - name: "{{item}}"
+  - name: installing softwares
+    package:
+    - name: "{{item}}"
     loop:
     - nginx
     - mysql
